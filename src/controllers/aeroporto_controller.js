@@ -1,4 +1,6 @@
 const Aeroporto = require("../models/aeroporto_models.js")
+const cep_endereco = require("../middlewares/cep_endereco.js")
+
 
 const store = (req, res) => {
     Aeroporto.create(req.body);
@@ -25,3 +27,10 @@ const destroy = (req, res) => {
     res.json();
 }
 
+module.exports = {
+    store,
+    index,
+    show,
+    update,
+    destroy,
+};

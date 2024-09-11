@@ -25,3 +25,10 @@ const destroy = (req, res) => {
     res.json();
 }
 
+module.exports = {
+    store,
+    index,
+    show,
+    update,
+    destroy,
+};
